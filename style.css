@@ -1,0 +1,59 @@
+body{
+    background-image: url('images/background.jpg');
+    background-size: cover;  /* Ensures the image covers the entire element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;  /* Prevents the image from repeating */   
+}
+
+.static-block{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+h1{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 3em;
+    color: rgb(206, 206, 206);
+    text-shadow: 1px 1px 5px rgb(206, 206, 206);
+    font-size: 55px;  
+}
+
+nav{
+    padding: 10px;
+    font-size: 20px;
+    color: rgba(206, 206, 206, 0.769);
+    font-weight: bold; /* Makes the text bold */
+}
+
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li{
+    margin: 0 10px;
+    flex-shrink: 0;   
+}
+
+nav img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
